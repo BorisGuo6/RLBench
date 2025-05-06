@@ -32,7 +32,7 @@ class ReachTarget(Task):
         for ob in [self.target, self.distractor0, self.distractor1]:
             b.sample(ob, min_distance=0.2,
                      min_rotation=(0, 0, 0), max_rotation=(0, 0, 0))
-
+        # self.target.set_position([-0.2, 0., 0.])
         return ['reach the %s target' % color_name,
                 'touch the %s ball with the panda gripper' % color_name,
                 'reach the %s sphere' %color_name]

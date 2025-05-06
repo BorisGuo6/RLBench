@@ -62,6 +62,7 @@ for i in range(training_steps):
     print(action)
     # Step the task and obtain a new observation, reward and a terminate flag.
     obs, reward, terminate = task.step(action)
+    print(reward)
 
 print('Done')
 env.shutdown()

@@ -64,6 +64,7 @@ class Scene(object):
         self._set_camera_properties()
 
         x, y, z = self._workspace.get_position()
+        # breakpoint()
         minx, maxx, miny, maxy, _, _ = self._workspace.get_bounding_box()
         self._workspace_minx = x - np.fabs(minx) - 0.2
         self._workspace_maxx = x + maxx + 0.2

@@ -1,4 +1,6 @@
 import numpy as np
+import sys
+sys.path.append('/data/wbj/miniconda3/envs/graspnet/lib/python3.9/site-packages')
 
 from rlbench.action_modes.action_mode import MoveArmThenGripper
 from rlbench.action_modes.arm_action_modes import JointVelocity

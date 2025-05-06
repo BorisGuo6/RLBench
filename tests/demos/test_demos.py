@@ -1,6 +1,10 @@
+import sys
+import os
+sys.path.append('/data/wbj/miniconda3/envs/rlbench/lib/python3.9/site-packages')
+sys.path.append('/data/wbj/RLBench')
+
 import unittest
 import rlbench.backend.task as task
-import os
 from rlbench.backend.utils import task_file_to_task_class
 from pyrep import PyRep
 from pyrep.robots.arms.panda import Panda
